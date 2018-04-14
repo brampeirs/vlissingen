@@ -3,7 +3,10 @@ GENERAL
 ***********************************/
 
 body {
-  font-family: 'Varela Round', sans-serif;
+  /*font-family: 'Varela Round', sans-serif;*/
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: rgb(40, 43, 64);
 }
 
 p {
@@ -13,6 +16,17 @@ p {
 h2 {
     margin-top: 0;
     margin-bottom: 15px;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+p {
+ color: rgb(40, 43, 64);
+}
+
+.intro {
+  font-weight: 500;
+  font-size: 20px;
 }
 
 section {
@@ -115,7 +129,7 @@ NAVIGATION
   -moz-transition: all 0.35s;
   transition: all 0.35s;
   padding-top: 10px;
-  font-family: 'Varela Round', sans-serif;
+  /*font-family: 'Varela Round', sans-serif;*/
 }
 
 /* add border when scrolling */
@@ -239,7 +253,7 @@ HERO
 ***********************************/
 
 #hero-section {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
   padding: 100px 20px 20px 20px;
   text-align: center;
   height: 320px;
@@ -387,7 +401,127 @@ SWIPER
   opacity: 1;
 }
 
+/***********************************
+FACILITIES
+***********************************/
+.facilities ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+    margin-left: 15px;
+}
 
+.facilities li {
+  display: block;
+  padding-bottom: 15px;
+
+  font-size: 1em;
+  
+}
+
+.facilities .fas {
+  font-size: 3em;
+  color:rgb(183, 141, 47);
+  opacity: .7;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+
+.omgeving-title {
+  padding-top: 60px;
+}
+
+
+/* card-villa */
+.card-villa {
+
+  border: 0;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  -webkit-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -moz-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -o-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -ms-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+}
+
+.card-villa:hover {
+  box-shadow: 0px 12px 19px -7px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+}
+
+.card-villa img {
+  width: 100%;
+  border-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card-villa-body {
+  padding: 20px;
+}
+
+.card-villa-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px;
+  background-color: #28a745;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.9em;
+  color: #fff;
+  margin-bottom: 8px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(76,175,80,0.14), 0 3px 1px -2px rgba(76,175,80,0.2), 0 1px 5px 0 rgba(76,175,80,0.12);
+    box-shadow: 0 2px 2px 0 rgba(76,175,80,0.14), 0 3px 1px -2px rgba(76,175,80,0.2), 0 1px 5px 0 rgba(76,175,80,0.12);
+}
+
+.card-villa-body-title {
+  margin-bottom: 12px;
+  margin-top: 15px;
+  font-size: 1.3em;
+  font-weight: 400;
+  color: rgb(44, 44, 44);
+}
+
+.card-villa-body-description {
+  margin-bottom: 16px;
+  font-size: 1.2em;
+  font-weight: 300;
+  color: rgb(154, 154, 154);
+  min-height: 70px;
+}
+
+.card-villa-footer {
+  margin-top: 15px;
+}
+
+.card-villa-footer a,
+.card-villa-footer a:focus,
+.card-villa-footer a:active  {
+  transition: all 150ms ease 0s;
+  background-color: #f96332;
+  color: #FFFFFF;
+  border: none;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 11px 22px;
+}
+
+.card-villa-footer a:hover {
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
+  background-color: #fa7a50;
+  color: #fff;
+}
 
 
 /***********************************
