@@ -452,7 +452,7 @@ FACILITIES
 }
 
 .card-villa:hover {
-  box-shadow: 0px 12px 19px -7px rgba(0, 0, 0, 0.3);
+
     transform: translateY(-10px);
     -webkit-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
@@ -509,7 +509,7 @@ FACILITIES
 .card-villa-footer a:focus,
 .card-villa-footer a:active  {
   transition: all 150ms ease 0s;
-  background-color: #f96332;
+  background-color: #4bb5ff;
   color: #FFFFFF;
   border: none;
   font-size: 12px;
@@ -519,7 +519,7 @@ FACILITIES
 
 .card-villa-footer a:hover {
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
-  background-color: #fa7a50;
+  background-color: #4bb5ff;
   color: #fff;
 }
 
