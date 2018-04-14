@@ -259,15 +259,32 @@ HERO
   height: 320px;
   color: white;
 
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ), url('https://www.largoresorts.nl/sites/default/files/styles/header__1900x700_/public/header-largo-city.jpg?itok=rC2FQv7g&timestamp=1519817101');
   background-position: 50% 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.index {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url('../img/vlissingenpano.jpg');
+}
+
+.urban {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url('../img/buitenzicht_optimized.jpg');
+}
+
+.lodge {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url('../img/lodge.jpg');
 }
 
 @media screen and (min-width: 768px) {
@@ -586,4 +603,18 @@ footer .btn-default {
   .social-icon {
     float: right;
   }
+}
+
+
+/***** detail page *****/
+.title-wrapper {
+  margin-top: -108px;
+  background: #FFF;
+  padding: 25px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.title-wrapper p {
+  font-size: 20px;
 }
