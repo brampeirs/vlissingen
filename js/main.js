@@ -36,20 +36,46 @@ $('#mainNav').affix({
 });
 
 
-//SWIPER
+
+// owl carousel
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        autoplay: true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
+});
+
+/*
 
 //initialize swiper after jquery loaded
 var mySwiper = new Swiper ('.swiper-container', {
   // Optional parameters
   pagination: '.swiper-pagination',
   paginationClickable: true,
-  loop: true,
+  loop: false,
   nextButton: '.swiper-button-next',
   prevButton: '.swiper-button-prev',
   autoplay: 5000,
   speed: 500,
   autoplayDisableOnInteraction: true,      
   spaceBetween: 5,
-  slidesPerView: 2
-}) ;       
+    slidesPerView: 'auto',
+    centeredSlides: true
+}) ;
+*/
 

@@ -377,45 +377,22 @@ FLOORPLAN
 
 
 /***********************************
-SWIPER
+OWL CAROUSEL
 ***********************************/
-
-.swiper-container {    
-    margin: 0 auto;
-    margin-top: 30px;   
-}     
-
-
-.swiper-container img {
-    max-width: 100%;  
-}    
-
-.swiper-pagination{
-  color: #fff;
-  text-shadow: 0 0 5px #000;
-  
+.owl-carousel {
+  position: relative;
 }
 
- .swiper-pagination-bullet {
-  background-color: transparent;
-    border: 1px solid #fff;
-   opacity: 1;
-       width: 10px;
-    height: 10px;
-}
- 
-  .swiper-pagination-bullet-active {
-      background-color:#fff; 
-  }
-
-.swiper-button-prev,
-.swiper-button-next {
-  opacity: .6;
+.owl-carousel .owl-next {
+  position: absolute;
+  top: 50%;
+  right: 1%;
 }
 
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  opacity: 1;
+.owl-carousel .owl-prev {
+  position: absolute;
+  top: 50%;
+  left: 1%;
 }
 
 /***********************************
