@@ -1,0 +1,23 @@
+{
+  "name": "vlissingen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brampeirs/vlissingen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brampeirs/vlissingen/issues"
+  },
+  "homepage": "https://github.com/brampeirs/vlissingen#readme",
+  "devDependencies": {
+    "browser-sync": "2.24.3",
+    "gulp": "^3.9.1"
+  }
+}
