@@ -43,9 +43,12 @@ $(document).ready(function(){
         loop:true,
         margin:10,
         nav:true,
+        dots: false,
+        navText: [],
+        navElement: 'div role="button" ',
         autoplay: true,
         autoplayTimeout:5000,
-        autoplayHoverPause:false,
+        autoplayHoverPause:true,
         responsive:{
             0:{
                 items:1
