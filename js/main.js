@@ -39,7 +39,7 @@ $('#mainNav').affix({
 
 // owl carousel
 $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
+    $('.owl-carousel-content').owlCarousel({
         loop:true,
         margin:10,
         nav:true,
