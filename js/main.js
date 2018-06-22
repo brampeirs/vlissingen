@@ -63,6 +63,15 @@ $(document).ready(function(){
     })
 });
 
+$(function(){
+    $(".slideshow").fadeShow({
+        correctRatio: true,
+        images: [            '/img/hero-lodge.jpg',
+        '/img/city-hero.jpg',
+        'img/park/13.jpg']
+    });
+});
+
 /*
 
 //initialize swiper after jquery loaded
