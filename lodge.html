@@ -15,11 +15,11 @@
     <meta property="og:image" content="http://www.vlissingenvakantie.nl/img/park/03.jpg"/>
     <meta property="fb:admins" content="1862010070734846"/>
 
-    <link href="http://www.vlissingenvakantie.nl" rel="canonical"/>
-    <link href="http://www.vlissingenvakantie.nl/en/" hreflang="en" rel="alternate"/>
-    <link href="http://www.vlissingenvakantie.nl/de/" hreflang="de" rel="alternate"/>
-    <link href="http://www.vlissingenvakantie.nl/fr/" hreflang="fr" rel="alternate"/>
-    <link href="http://www.vlissingenvakantie.nl" hreflang="nl" rel="alternate"/>
+    <link href="http://www.vlissingenvakantie.nl/lodge.html" rel="canonical"/>
+    <link href="http://www.vlissingenvakantie.nl/en/lodge.html" hreflang="en" rel="alternate"/>
+    <link href="http://www.vlissingenvakantie.nl/de/lodge.html" hreflang="de" rel="alternate"/>
+    <link href="http://www.vlissingenvakantie.nl/fr/lodge.html" hreflang="fr" rel="alternate"/>
+    <link href="http://www.vlissingenvakantie.nl/lodge.html" hreflang="nl" rel="alternate"/>
 
     <title>Noordzee Resort Largo City, Vakantiepark in Vlissingen - Nederland</title>
 
@@ -127,7 +127,10 @@
         <div class="row park-omschrijving">
             <div class="col-md-8 col-md-offset-2">
                 <div class="title-wrapper">
-                    <h2>Duinlodge 6</h2>
+                        <h2 class="title-villa">Duinlodge 6</h2>
+                        <a class="btn btn-boeken-detail"
+                           href="https://boeken.roompot.nl/roompot/object/resourceid/27877882/objectid/3513338/dc/DBEI/rc/aangebrachteigenaa/lan/nl/ownerid/162766408/myenv/true">Boeken</a>
+
                     <p>Deze nieuwe, luxe lodge is geschikt voor 6 personen en ligt aan de bosrand, dicht bij het strand.
                         De woonkamer is uitgerust met een smart-tv en een open haard. In de keuken vindt u onder andere
                         een Nespresso apparaat en een vaatwasser. In de 3 slaapkamers staan Auping bedden en een
@@ -335,7 +338,7 @@
                 <div class="offer">
                     <hr/>
                     <a class="btn-boeken"
-                       href="https://boeken.roompot.nl/roompot/object/resourceid/26403823/objectid/2899334/dc/DBEI/rc/aangebrachteigenaa/lan/nl/ownerid/162766408/myenv/true">Prijzen
+                       href="https://boeken.roompot.nl/roompot/object/resourceid/27877882/objectid/3513338/dc/DBEI/rc/aangebrachteigenaa/lan/nl/ownerid/162766408/myenv/true">Prijzen
                         en beschikbaarheid</a>
                 </div>
             </div>
@@ -388,9 +391,9 @@
                             class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdown-language-footer">
-                        <li><a href="en/index.html">English</a></li>
-                        <li><a href="de/index.html">Deutsch</a></li>
-                        <li><a href="fr/index.html">Français</a></li>
+                        <li><a href="en/lodge.html">English</a></li>
+                        <li><a href="de/lodge.html">Deutsch</a></li>
+                        <li><a href="fr/lodge.html">Français</a></li>
                     </ul>
                 </div>
                 <!--<div class="social-icons">
@@ -400,10 +403,7 @@
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-10 col-md-offset-2">
-                <iframe id="fb"
-                        src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fvlissingenvakantie%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId=1192618400848395"
-                        width="100%" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                        allowTransparency="true"></iframe>
+                <div class="fb-like" data-href="https://www.facebook.com/vlissingenvakantie/" data-width="350" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
             </div>
         </div>
     </div>
@@ -425,6 +425,16 @@
 
 <!-- Theme JS -->
 <script src="js/main.js"></script>
+
+<!--Facebook share plugin-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v3.0';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 </body>
 </html>

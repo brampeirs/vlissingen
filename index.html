@@ -54,34 +54,6 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window,
-            document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1886990518254650'); // Insert your pixel ID here.
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-                   src="https://www.facebook.com/tr?id=1886990518254650&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- DO NOT MODIFY -->
-    <!-- End Facebook Pixel Code -->
 
     <!-- Hotjar Tracking Code for https://brampeirs.github.io/noordzee-resort-largo-city/ -->
     <script>
@@ -125,19 +97,14 @@
 <section id="hero-section" class="index">
     <div class="slideshow"></div>
     <!-- image vlissingen sea -->
-    <div class="container container-omgeving">
-        <h1>Largo Noordzee Resort</h1>
-        <h1>
-            <small>Vakantiepark in Vlissingen, Nederland</small>
-        </h1>
-    </div>
 </section>
 
 <section id="omgeving">
     <div class="container">
         <div class="row omgeving-title">
             <div class="col-xs-12">
-                <h2>Largo Noordzee Resort Vlissingen</h2>
+                <h2>Largo Noordzee Resort Vlissingen
+                <br ><small>Vakantiepark in Vlissingen, Nederland</small></h2>
             </div>
         </div>
         <div class="row omgeving-omschrijving">
@@ -209,7 +176,10 @@
                         <h5 class="card-villa-body-title">Urban Villa 6</h5>
                         <p class="card-villa-body-description">Luxe villa geschikt voor 6 personen met houtkachel en
                             tuin op het zuiden.</p>
-                        <div class="card-villa-footer"><a href="urban.html" class="btn btn-primary">Meer info</a></div>
+                        <div class="card-villa-footer">
+                            <a href="https://boeken.roompot.nl/roompot/object/resourceid/26403823/objectid/2899334/dc/DBEI/rc/aangebrachteigenaa/lan/nl/ownerid/162766408/myenv/true" class="btn btn-primary">Boeken</a>
+                            <a href="urban.html" class="card-link">Meer info</a>
+                        </div>
                     </div>
                 </div>
 
@@ -227,7 +197,10 @@
                         <h5 class="card-villa-body-title">Duinlodge 6</h5>
                         <p class="card-villa-body-description">Deze luxe lodge is geschikt voor 6 personen en ligt aan
                             de bosrand, dicht bij het strand.</p>
-                        <div class="card-villa-footer"><a href="lodge.html" class="btn btn-primary">Meer info</a></div>
+                        <div class="card-villa-footer">
+                            <a href="https://boeken.roompot.nl/roompot/object/resourceid/27877882/objectid/3513338/dc/DBEI/rc/aangebrachteigenaa/lan/nl/ownerid/162766408/myenv/true" class="btn btn-primary">Boeken</a>
+                            <a href="lodge.html" class="card-link">Meer info</a>
+                        </div>
                     </div>
                 </div>
 
@@ -295,10 +268,7 @@
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-10 col-md-offset-2">
-                <iframe id="fb"
-                        src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fvlissingenvakantie%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId=1192618400848395"
-                        width="100%" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                        allowTransparency="true"></iframe>
+                <div class="fb-like" data-href="https://www.facebook.com/vlissingenvakantie/" data-width="350" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
             </div>
         </div>
     </div>
@@ -318,12 +288,21 @@
 <!-- owl carousel -->
 <script src="plugins/owlcarousel/owl.carousel.min.js"></script>
 
-<-- jQuery FadeShow -->
+<!-- jQuery FadeShow -->
 <script src="plugins/fadeShow/src/jquery.fadeshow-0.1.2.min.js" type="text/javascript"></script>
 
 <!-- Theme JS -->
 <script src="js/main.js"></script>
 
+<!--Facebook share plugin-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v3.0';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 
 </body>

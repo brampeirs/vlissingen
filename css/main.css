@@ -437,7 +437,8 @@ FACILITIES
 
 
 .omgeving-title {
-  padding-top: 60px;
+  padding-top: 40px;
+  margin-bottom: 10px;
 }
 
 
@@ -461,10 +462,10 @@ FACILITIES
 
 .card-villa:hover {
 
-    transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
 }
 
 .card-villa img {
@@ -513,22 +514,55 @@ FACILITIES
   margin-top: 15px;
 }
 
-.card-villa-footer a,
-.card-villa-footer a:focus,
-.card-villa-footer a:active  {
+.card-villa-footer .btn,
+.card-villa-footer .btn:focus,
+.card-villa-footer .btn:active  {
   transition: all 150ms ease 0s;
-  background-color: #4bb5ff;
+  background-color: #70B8FF;
   color: #FFFFFF;
   border: none;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 600;
   padding: 11px 22px;
 }
 
-.card-villa-footer a:hover {
+.card-villa-footer .btn:hover {
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
-  background-color: #4bb5ff;
+  background-color: #3d9fff;
   color: #fff;
+}
+
+.card-villa-footer .card-link {
+  vertical-align: middle;
+  margin-left: 15px;
+  display: inline-block;
+  color: rgb(44, 44, 44);
+}
+
+
+/****************
+ */
+
+.btn-boeken-detail,
+.btn-boeken-detail:focus,
+.btn-boeken-detail:active  {
+  transition: all 150ms ease 0s;
+  background-color: #70B8FF;
+  color: #FFFFFF;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 11px 22px;
+  float: right;
+}
+
+.btn-boeken-detail:hover {
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
+  background-color: #3d9fff;
+  color: #fff;
+}
+.title-villa {
+  display: inline-block;
 }
 
 
@@ -622,6 +656,10 @@ footer .btn-default {
   }
   .omgeving-title {
     padding-top: 30px;
+  }
+
+  .btn-boeken-detail {
+    display: none;
   }
 }
 
