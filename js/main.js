@@ -45,7 +45,7 @@ $(document).ready(function(){
         nav:true,
         dots: false,
         navText: [],
-        navElement: 'div role="button" ',
+        navElement: 'div role="button" aria-label="navigation carousel" ',
         autoplay: true,
         autoplayTimeout:5000,
         autoplayHoverPause:true,
@@ -66,7 +66,8 @@ $(document).ready(function(){
 $(function(){
     $(".slideshow").fadeShow({
         correctRatio: true,
-        images: [            '/img/hero-lodge.jpg',
+        images: [
+        'img/hero-lodge.jpg',
         'img/park/13.jpg']
     });
 });

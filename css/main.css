@@ -4,7 +4,7 @@ GENERAL
 
 body {
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
-
+  font-display: auto;
   /* font-family: 'Source Sans Pro', sans-serif;*/
    /*font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;*/
   -webkit-font-smoothing: antialiased;
