@@ -68,7 +68,8 @@ $(function(){
         correctRatio: true,
         images: [
         'img/hero-lodge.jpg',
-        'img/park/13.jpg']
+        'img/park/13.jpg',
+        ]
     });
 });
 
