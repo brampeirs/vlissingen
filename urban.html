@@ -52,10 +52,26 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'UA-126661592-1');
+        gtag('config', 'UA-126661592-1'); // google analytics
+        gtag('config', 'AW-785587506'); // google ads tag, counts clicks on book now button
     </script>
 
-
+    <!-- Event snippet for Klik op knop Boeken conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-785587506/gBeRCMavy4oBELK6zPYC',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
 
   </head>
 
@@ -78,7 +94,7 @@
           <div class="col-md-8 col-md-offset-2">
             <div class="title-wrapper">
             <h2 class="title-villa">Urban Villa 6</h2>
-              <a class="btn btn-boeken-detail" href="https://boeken.roompot.nl/roompot/object/resourceid/26403823/objectid/2899334/dc/DBEI/rc/aangebrachteigenaa/lan/nl/ownerid/162766408/myenv/true">Boeken</a>
+              <a class="btn btn-boeken-detail" href="https://boeken.roompot.nl/roompot/object/resourceid/26403823/objectid/2899334/dc/DBEI/rc/aangebrachteigenaa/lan/nl/ownerid/162766408/myenv/true" onclick="gtag_report_conversion('https://boeken.roompot.nl/roompot/object/resourceid/26403823/objectid/2899334/dc/DBEI/rc/aangebrachteigenaa/lan/nl/ownerid/162766408/myenv/true')">Boeken</a>
             <p>Luxe, geschakelde villa voor 6 personen. De vakantiewoning beschikt over een woonkamer met gezellige zithoek, smart TV, houtkachel, vloerverwarming en een volledig ingerichte open keuken. Op de bovenverdieping bevinden zich drie slaapkamers met eenpersoons boxspringbedden en een badkamer met douche en vloerverwarming. De tuin is gelegen op het zuiden en uitgerust met meubilair.</p>
           </div>
         </div>
@@ -246,7 +262,7 @@
            <div class="offer">
              <hr/>
              <a class="btn-boeken"
-                href="https://boeken.roompot.nl/roompot/object/resourceid/26403823/objectid/2899334/dc/DBEI/rc/aangebrachteigenaa/lan/nl/ownerid/162766408/myenv/true">Prijzen
+                href="https://boeken.roompot.nl/roompot/object/resourceid/26403823/objectid/2899334/dc/DBEI/rc/aangebrachteigenaa/lan/nl/ownerid/162766408/myenv/true" onclick="gtag_report_conversion('https://boeken.roompot.nl/roompot/object/resourceid/26403823/objectid/2899334/dc/DBEI/rc/aangebrachteigenaa/lan/nl/ownerid/162766408/myenv/true')">Prijzen
                en beschikbaarheid</a>
            </div>
          </div>

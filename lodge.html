@@ -57,10 +57,26 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'UA-126661592-1');
+        gtag('config', 'UA-126661592-1'); // google analytics
+        gtag('config', 'AW-785587506'); // google ads tag, counts clicks on book now button
     </script>
 
-
+    <!-- Event snippet for Klik op knop Boeken conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-785587506/gBeRCMavy4oBELK6zPYC',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
 </head>
 
 <body>
@@ -80,7 +96,7 @@
                 <div class="title-wrapper">
                         <h2 class="title-villa">Duinlodge 6</h2>
                         <a class="btn btn-boeken-detail"
-                           href="https://boeken.roompot.nl/roompot/object/resourceid/27877882/objectid/3513338/dc/DBEI/rc/aangebrachteigenaa/lan/nl/ownerid/162766408/myenv/true">Boeken</a>
+                           href="https://boeken.roompot.nl/roompot/object/resourceid/27877882/objectid/3513338/dc/DBEI/rc/aangebrachteigenaa/lan/nl/ownerid/162766408/myenv/true" onclick="gtag_report_conversion('https://boeken.roompot.nl/roompot/object/resourceid/27877882/objectid/3513338/dc/DBEI/rc/aangebrachteigenaa/lan/nl/ownerid/162766408/myenv/true')">Boeken</a>
 
                     <p>Deze nieuwe, luxe lodge is geschikt voor 6 personen en ligt aan de bosrand, dicht bij het strand.
                         De woonkamer is uitgerust met een smart-tv en een open haard. De keuken is voorzien van een Nespresso apparaat, een vaatwasser, oven, magnetron en koelkast met vriesvak.
@@ -293,7 +309,7 @@
                 <div class="offer">
                     <hr/>
                     <a class="btn-boeken"
-                       href="https://boeken.roompot.nl/roompot/object/resourceid/27877882/objectid/3513338/dc/DBEI/rc/aangebrachteigenaa/lan/nl/ownerid/162766408/myenv/true">Prijzen
+                       href="https://boeken.roompot.nl/roompot/object/resourceid/27877882/objectid/3513338/dc/DBEI/rc/aangebrachteigenaa/lan/nl/ownerid/162766408/myenv/true" onclick="gtag_report_conversion('https://boeken.roompot.nl/roompot/object/resourceid/27877882/objectid/3513338/dc/DBEI/rc/aangebrachteigenaa/lan/nl/ownerid/162766408/myenv/true')">Prijzen
                         en beschikbaarheid</a>
                 </div>
             </div>

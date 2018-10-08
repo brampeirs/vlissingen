@@ -75,10 +75,26 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'UA-126661592-1');
+        gtag('config', 'UA-126661592-1'); // google analytics
+        gtag('config', 'AW-785587506'); // google ads tag, counts clicks on book now button
     </script>
 
-
+    <!-- Event snippet for Klik op knop Boeken conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-785587506/gBeRCMavy4oBELK6zPYC',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
 </head>
 
 <body>
@@ -159,7 +175,7 @@
                         <h5 class="card-villa-body-title">Urban Villa 6</h5>
                         <p class="card-villa-body-description">Luxuriöse Villa mit Holzofen und Garten Richtung Süden.</p>
                         <div class="card-villa-footer">
-                            <a href="https://boeken.roompot.nl/roompot/object/resourceid/26403823/objectid/2899334/dc/DBEI/rc/aangebrachteigenaa/lan/de/ownerid/162766408/myenv/true" class="btn btn-primary">Buchen</a>
+                            <a href="https://boeken.roompot.nl/roompot/object/resourceid/26403823/objectid/2899334/dc/DBEI/rc/aangebrachteigenaa/lan/de/ownerid/162766408/myenv/true" onclick="gtag_report_conversion('https://boeken.roompot.nl/roompot/object/resourceid/26403823/objectid/2899334/dc/DBEI/rc/aangebrachteigenaa/lan/de/ownerid/162766408/myenv/true')" class="btn btn-primary">Buchen</a>
                             <a href="urban.html" class="card-link">Mehr info</a>
                         </div>
                     </div>
@@ -179,7 +195,7 @@
                         <h5 class="card-villa-body-title">Duinlodge 6</h5>
                         <p class="card-villa-body-description">Diese luxuriöse Lodge eignet sich für 6 Personen und befindet sich am Waldrand, nahe am Strand.</p>
                         <div class="card-villa-footer">
-                            <a href="https://boeken.roompot.nl/roompot/object/resourceid/27877882/objectid/3513338/dc/DBEI/rc/aangebrachteigenaa/lan/de/ownerid/162766408/myenv/true" class="btn btn-primary">Buchen</a>
+                            <a href="https://boeken.roompot.nl/roompot/object/resourceid/27877882/objectid/3513338/dc/DBEI/rc/aangebrachteigenaa/lan/de/ownerid/162766408/myenv/true" onclick="gtag_report_conversion('https://boeken.roompot.nl/roompot/object/resourceid/27877882/objectid/3513338/dc/DBEI/rc/aangebrachteigenaa/lan/de/ownerid/162766408/myenv/true')" class="btn btn-primary">Buchen</a>
                             <a href="lodge.html" class="card-link">Mehr info</a>
                         </div>
                     </div>
